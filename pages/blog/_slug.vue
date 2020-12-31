@@ -70,7 +70,6 @@
 
 <script>
 import { format } from 'date-fns'
-import marked from 'marked'
 
 export default {
   data() {
@@ -80,34 +79,9 @@ export default {
   },
   methods: {
     format,
-    marked,
   },
   async fetch() {
-    // console.log(this.$route.params.slug)
-    // const { posts } = await this.$strapi.graphql({
-    //   query: `
-    //     {
-    //       posts(where:{slug: "${this.$route.params.slug}"}) {
-    //         title
-    //         slug
-    //         excerpt
-    //         body
-    //         published_at
-    //         cover {
-    //           formats
-    //         }
-    //         author {
-    //           name
-    //           avatar {
-    //             formats
-    //           }
-    //         }
-    //       }
-    //     }
-    //   `,
-    // })
     this.post = await this.$api.getPost(this.$route.params.slug)
-    console.log(this.post)
   },
 }
 </script>

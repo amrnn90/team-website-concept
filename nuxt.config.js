@@ -1,9 +1,7 @@
 export default {
-  publicRuntimeConfig: {
-    strapiUrl: process.env.STRAPI_URL || 'http://localhost:1337',
-  },
+  publicRuntimeConfig: {},
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  ssr: false,
+  ssr: true,
 
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -43,7 +41,7 @@ export default {
   buildModules: ['@nuxtjs/tailwindcss', '@nuxtjs/sanity'],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/strapi'],
+  modules: [],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
@@ -55,9 +53,11 @@ export default {
     babel: {
       plugins: ['@babel/plugin-proposal-optional-chaining'],
     },
+    transpile: ['lodash-es'],
   },
 
-  strapi: {
-    entities: ['posts'],
+  sanity: {
+    projectId: 'mjhbcitn',
+    dataset: 'production',
   },
 }

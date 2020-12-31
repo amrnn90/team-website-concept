@@ -1,7 +1,7 @@
 import { groq } from '@nuxtjs/sanity'
 
 const api = ($sanity) => ({
-  getPosts({ skip = 0, limit = 9, order = '_createdAt asc' } = {}) {
+  getPosts({ skip = 0, limit = 200, order = '_createdAt desc' } = {}) {
     const query = groq`
       {
         "posts":

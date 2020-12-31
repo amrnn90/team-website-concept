@@ -10,7 +10,7 @@
       </div>
 
       <div class="grid gap-10 md:grid-cols-2 lg:gap-16 xl:grid-cols-3">
-        <div v-for="post in posts" :key="post.id" class="relative rounded-lg">
+        <div v-for="post in posts" :key="post._id" class="relative rounded-lg">
           <!-- <SanityContent :blocks="post.body" /> -->
 
           <div class="absolute inset-0 shadow-2xl opacity-50" />
@@ -68,7 +68,6 @@
 
 <script>
 import { format } from 'date-fns'
-import { groq } from '@nuxtjs/sanity'
 
 export default {
   data() {
