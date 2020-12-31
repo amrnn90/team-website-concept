@@ -27,7 +27,7 @@
       </div>
 
       <article class="prose prose-lg md:prose-xl">
-        <SanityContent :blocks="post.body" />
+        <Content :blocks="post.body" />
       </article>
     </AppContainer>
 
@@ -58,7 +58,7 @@
                 <h3 class="text-2xl">{{ post.author.name }}</h3>
               </div>
               <p class="text-gray-500" v-if="post.author.bio">
-                <SanityContent :blocks="post.author.bio" />
+                <Content :blocks="post.author.bio" />
               </p>
             </div>
           </div>
