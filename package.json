@@ -1,0 +1,44 @@
+{
+  "name": "team-app-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "@nuxtjs/sanity": "^0.4.2",
+    "@nuxtjs/strapi": "^0.1.9",
+    "@sanity/client": "^2.1.0",
+    "@sanity/image-url": "^0.140.19",
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.3.1",
+    "basicscroll": "^3.0.3",
+    "core-js": "^3.6.5",
+    "date-fns": "^2.16.1",
+    "enter-view": "^2.0.1",
+    "lodash-es": "^4.17.20",
+    "marked": "^1.2.7",
+    "nuxt": "^2.14.6",
+    "scroll-out": "^2.2.12",
+    "swiper": "^6.4.1",
+    "vue": "^2.6.12",
+    "vue-check-view": "^0.3.0",
+    "vue-observe-visibility": "^0.4.6"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.12.7",
+    "@nuxtjs/tailwindcss": "^3.3.4",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9.8.6",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "postcss": "^7.0.35",
+    "prettier": "^2.1.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "tailwindcss-line-clamp": "^1.0.5"
+  }
+}
